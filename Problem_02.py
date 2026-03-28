@@ -1,6 +1,6 @@
 #test name = T2
 #ID = t2
-def calculate_fine(book_title, days_overdue, daily_rate=5.0, max_fine=150.0):
+def calculate_fine(book_title, days_overdue, daily_rate, max_fine=150.0):
     fine = days_overdue * daily_rate
 
     if fine > max_fine:
@@ -8,3 +8,6 @@ def calculate_fine(book_title, days_overdue, daily_rate=5.0, max_fine=150.0):
         print("You have accumulated the maximum fine of INR: 150.0")
 
     return fine   
+book_title = input()
+days_overdue = int(input())
+daily_rate = int(input())
