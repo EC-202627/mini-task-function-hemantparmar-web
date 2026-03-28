@@ -7,3 +7,4 @@ def calculate_fine(book_title, days_overdue, daily_rate=5.00, max_fine=150.0):
 
 book_title = input()
 days_overdue = int(input())
+fine = calculate_fine(book_title, days_overdue)
