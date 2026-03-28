@@ -12,7 +12,7 @@ book_title = input()
 days_overdue = int(input())
 daily_rate = int(input())
 
-fine = calculate_fine(book_title, days_overdue)
+fine = calculate_fine(book_title, days_overdue, daily_rate)
 
 print(f"Book: {book_title}")
 print(f"Days overdue: {days_overdue}")
